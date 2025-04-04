@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #070606;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#layout {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100vh;
+}
+
+#layout td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #070707 0.01%,
+    #444343 0.02%,
+    #000000 100%
+  );
+  z-index: 1000;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+#logo img {
+  height: 120px;
+  margin-top: 40px;
+}
+
+#Menu {
+  position: relative;
+}
+
+#Menu img {
+  height: 40px;
+  cursor: pointer;
+}
+
+#Menu .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#Menu .dropdown a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#Menu .dropdown a:hover {
+  background-color: #444;
+}
+
+#Menu:hover .dropdown {
+  display: block;
+}
+
+#navbar #Menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+#forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 169px;
+}
+
+#forms h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+#formulario label {
+  font-size: 18px;
+  width: 30%;
+  text-align: start;
+}
+
+#formulario input,
+#formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.butao {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+
+  text-align: center;
+}
+#rodape {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+bottom: 0;
+  gap: 20px;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #070707 0.01%,
+    #444343 0.02%,
+    #000000 100%
+  );
+  color: white;
+  padding: 20px 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  
+}
+
+#rodape img {
+  width: 30px;
+  height: auto;
+}
+
+#rodape p {
+  margin: 0;
+  font-size: 14px;
+}
